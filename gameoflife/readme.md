@@ -11,6 +11,6 @@ The universe of the Game of Life is an infinite, two-dimensional orthogonal grid
  1. Any live cell with more than three live neighbours dies, as if by overpopulation.
  1. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
    
+![image](https://user-images.githubusercontent.com/39504405/95124273-d57ba280-075b-11eb-944a-923df570b619.png)
 
-
-![image](https://user-images.githubusercontent.com/39504405/95122285-eecf1f80-0758-11eb-9b2c-f7dd35b6e13f.png)
+These are two phases of the evolution that is occuring. The two phases are devided **(------)**
