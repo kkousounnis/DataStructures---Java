@@ -109,8 +109,8 @@ public class Life {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		final int ROWS = 24;  
+	// TODO Auto-generated method stub
+	final int ROWS = 24;  
         final int COLUMNS = 80;  
         final int GENERATIONS = 500;
         
