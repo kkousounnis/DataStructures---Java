@@ -1,3 +1,3 @@
 # DataStructures---Java
 
-This is java Core algorithms that solves real life problems.
+This is java Core code that demonstrates and solves real life problems.
