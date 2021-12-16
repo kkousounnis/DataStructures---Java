@@ -1,7 +1,5 @@
 package gameoflife;
 
-
-
 public class Life {
 	boolean[][] board;
 	
