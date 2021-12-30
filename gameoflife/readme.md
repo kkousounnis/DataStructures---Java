@@ -13,4 +13,4 @@ The universe of the Game of Life is an infinite, two-dimensional orthogonal grid
    
 ![image](https://user-images.githubusercontent.com/39504405/95124273-d57ba280-075b-11eb-944a-923df570b619.png)
 
-These are two phases of the evolution that is occuring. The two phases are devided **(------)**
+These are two phases of the evolution that is occuring. The two phases are devided **(------)**.
