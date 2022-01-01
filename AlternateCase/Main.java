@@ -1,13 +1,11 @@
-public class Main {
+public class Main {    
     
-    public static void main(String[] args){ 
-      
+    public static void main(String[] args){       
       //just an example
       alternateCase("Hello World!");        
     }
     
-    public static String alternateCase(final String string) {
-        
+    public static String alternateCase(final String string) {        
         //initialize variable
         String answer = "";
         
@@ -24,8 +22,7 @@ public class Main {
         return (answer);
     }
     
-    public static boolean checkCase(char c){
-      
+    public static boolean checkCase(char c){      
         if(Character.isUpperCase(c)){           
           return true;          
         }      
