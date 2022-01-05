@@ -1,13 +1,25 @@
-public class BuyCar {
-	public static int[] nbMonths(int startPriceOld, int startPriceNew, int savingperMonth, double percentLossByMonth) {
-    	int[] r = new int[2];
-    	boolean b = true;
-    	int monthCounter = 0;
-    	int totalSavings = startPriceNew;
-    	while(totalSavings < startPriceNew){
-      		monthCounter++;
-      		totalSavings = totalSavings+ savingperMonth;
+public class Main {
+
+	public static int[] nbMonths(double startPriceOld, double startPriceNew, double savingperMonth, double percentLossByMonth) {
+    		int[] results = new int[2];
+    		boolean b = true;
+    		double monthCounter = 0;
+    		double totalSavings = 0;
+    
+   		while(totalSavings < startPriceNew){      
+     			monthCounter++;
+      			totalSavings = totalSavings + savingperMonth + startPriceOld;
+      			startPriceNew = startPriceNew - startPriceNew * (percentLossByMonth/100);
+      			startPriceOld = startPriceOld - startPriceOld * (percentLossByMonth/100);    
+      			if(monthCounter % 2 == 0 ){
+
+        			percentLossByMonth = percentLossByMonth + 0.5;
+      			}
     		};
-	return null;
+    
+    		results[0] = (int)monthCounter;
+    		results[1] = (int)((totalSavings + startPriceOld) - startPriceNew);
+    
+		return (results);
 	}
 }
