@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class MainTest {
-
+	//this is testing methods
 	@Test
 	public void test1() {
 		int[] r = new int[] { 6, 766 };
@@ -14,3 +14,4 @@ public class MainTest {
 		assertArrayEquals(r, BuyCar.nbMonths(12000, 8000, 1000, 1.5));
 	}
 }
+
