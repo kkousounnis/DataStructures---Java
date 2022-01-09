@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class MainTest {
+public class BuyingCarTest {
 	//this is testing methods
 	@Test
 	public void test1() {
