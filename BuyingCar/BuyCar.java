@@ -2,12 +2,12 @@
 public class BuyCar {
 
     public static int[] nbMonths(double startPriceOld, double startPriceNew, double savingperMonth, double percentLossByMonth) {
-
+        
         int[] results = new int[2];
         boolean b = true;
         double monthCounter = 0;
         double totalSavings = startPriceOld;
-
+        //if the totalsavings is more than the price of the new car stop and make the transactions.
         while (totalSavings < startPriceNew) {
 
             monthCounter++;
