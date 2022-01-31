@@ -1,0 +1,4 @@
+Link to project.
+https://www.codewars.com/kata/582c297e56373f0426000098
+
+Convert a linked list to a string
