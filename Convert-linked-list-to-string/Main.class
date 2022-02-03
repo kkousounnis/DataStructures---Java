@@ -1,0 +1,17 @@
+
+public class Main {
+
+    public static String stringify(Node list) {
+        Node next = list;
+        String answer = "";
+        while (next != null) {
+
+            answer = answer + next.getData() + " -> ";
+
+            next = next.getNext();
+        }
+        answer += "null";
+        return (answer.toString());
+    }
+
+}
