@@ -7,12 +7,13 @@ import java.util.HashMap;
 public class CountNumberCharStringService {
 
     private static final String word1 = "Hello my name is konstantinos";
+    private static final String word2 = "Hello my name 3039 34534 is name name 34534 hrher name konstantinos";
 
     /**
      * @param sentence
      */
     public void countNumberCharString(Sentence sentence) {
-        sentence.setWord(word1);
+        sentence.setWord(word2);
         try {
             if (null != sentence) {
                 map(sentence);
@@ -20,9 +21,7 @@ public class CountNumberCharStringService {
         } catch (Exception e) {
 
         }
-
     }
-
     public void map(Sentence sentence) {
         String[] words = sentence.getWord().split(" ");
         HashMap<String, Integer> mapWords = new HashMap<>();

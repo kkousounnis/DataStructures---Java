@@ -6,7 +6,7 @@ import com.mycompany.service.CountNumberCharStringService;
 import java.util.HashMap;
 
 public class CountNumberCharStringController {
-    public HashMap<String, Integer> countNumberCharString(Sentence sentence){
-        return (new CountNumberCharStringService().countNumberCharString(sentence));
+    public void countNumberCharString(Sentence sentence){
+        new CountNumberCharStringService().countNumberCharString(sentence);
     }
 }
