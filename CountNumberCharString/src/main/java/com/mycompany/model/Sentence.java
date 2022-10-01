@@ -1,14 +1,14 @@
 package com.mycompany.model;
 
-public class Word {
+public class Sentence {
 
     private String word;
     
-    public Word() {
+    public Sentence() {
         this.word = word;
     }
 
-    public Word(String word) {
+    public Sentence(String word) {
         this.word = word;
     }
 

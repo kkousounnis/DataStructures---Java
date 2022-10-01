@@ -1,12 +1,15 @@
 package com.mycompany.App;
 
 import com.mycompany.Controller.CountNumberCharStringController;
-import com.mycompany.model.Word;
-import com.mycompany.service.CountNumberCharStringService;
+import com.mycompany.model.Sentence;
 
-public class CountNumberCharString {
-
+public class App {
+    /**
+     *
+     * Main class
+     */
     public static void main(String[] args) {
-        new CountNumberCharStringController().countNumberCharString(new Word(""));
+        //Write a Java Program to count the number of words in a string using HashMap.
+        new CountNumberCharStringController().countNumberCharString(new Sentence(""));
     }
 }

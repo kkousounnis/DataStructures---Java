@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <exec.mainClass>com.mycompany.App.CountNumberCharString</exec.mainClass>
+        <exec.mainClass>com.mycompany.App.App</exec.mainClass>
         
     </properties>
     <build>
@@ -24,7 +24,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- here we specify that we want to use the main method within the App class -->
-                            <mainClass>com.mycompany.App.CountNumberCharString</mainClass>
+                            <mainClass>com.mycompany.App.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

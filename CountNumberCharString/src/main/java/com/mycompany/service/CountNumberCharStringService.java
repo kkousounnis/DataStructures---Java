@@ -1,31 +1,43 @@
 package com.mycompany.service;
 
-import com.mycompany.model.Word;
+import com.mycompany.model.Sentence;
 
 import java.util.HashMap;
 
 public class CountNumberCharStringService {
 
-    private static final String word1 = "1234djd1238309";
+    private static final String word1 = "Hello my name is konstantinos";
 
     /**
-     * @param word
+     * @param sentence
      */
-    public void countNumberCharString(Word word) {
-        word.setWord(word1);
+    public void countNumberCharString(Sentence sentence) {
+        sentence.setWord(word1);
         try {
-            if (null != word) {
-
-                calculator(word);
+            if (null != sentence) {
+                map(sentence);
             }
         } catch (Exception e) {
-            System.out.println("NULL");
+
         }
+
     }
 
-    public HashMap<Integer, String> calculator(Word word) {
+    public void map(Sentence sentence) {
+        String[] words = sentence.getWord().split(" ");
+        HashMap<String, Integer> mapWords = new HashMap<>();
+        for (String word : words) {
 
-        return (null);
+            int counter = 0;
+            for (String identicalword : words) {
+                if (word.equals(identicalword)) {
+                    counter++;
+                }
+            }
+            mapWords.put(word, counter);
+
+        }
+        System.out.println(mapWords);
     }
 
 }
