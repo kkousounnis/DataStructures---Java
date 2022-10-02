@@ -14,5 +14,9 @@ public class App {
 
         //Write a Java Program to find the duplicate characters in a string.
         new DuplicateCharactersController().DuplicateCharacters(new Sentence(""));
+
+        //write a Java Progrma which explains OOP 1)Inheritance, 2)Abstraction, 3) Polymorphism 4) Encapsulation
+
+
     }
 }
