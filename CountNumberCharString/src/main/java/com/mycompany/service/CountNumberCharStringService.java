@@ -13,7 +13,7 @@ public class CountNumberCharStringService {
      * @param sentence
      */
     public void countNumberCharString(Sentence sentence) {
-        sentence.setWord(word2);
+        sentence.setSentence(word2);
         try {
             if (null != sentence) {
                 map(sentence);
@@ -22,8 +22,9 @@ public class CountNumberCharStringService {
 
         }
     }
+
     public void map(Sentence sentence) {
-        String[] words = sentence.getWord().split(" ");
+        String[] words = sentence.getSentence().split(" ");
         HashMap<String, Integer> mapWords = new HashMap<>();
         for (String word : words) {
 
