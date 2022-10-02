@@ -2,29 +2,29 @@ package com.mycompany.model;
 
 public class Sentence {
 
-    private String word;
+    private String sentence;
     
     public Sentence() {
-        this.word = word;
+        this.sentence = sentence;
     }
 
-    public Sentence(String word) {
-        this.word = word;
+    public Sentence(String sentence) {
+        this.sentence = sentence;
     }
 
-    public String getWord() {
-        return word;
+    public String getSentence() {
+        return sentence;
     }
 
-    public void setWord(String word) {
-        this.word = word;
+    public void setSentence(String sentence) {
+        this.sentence = sentence;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("word{");
-        sb.append("word=").append(word);
+        sb.append("sentence{");
+        sb.append("sentence=").append(sentence);
         sb.append('}');
         return sb.toString();
     }
