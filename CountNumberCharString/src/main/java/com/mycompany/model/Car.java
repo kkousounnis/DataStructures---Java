@@ -4,24 +4,34 @@ import java.sql.SQLOutput;
 
 public class Car extends Vehicle implements ICar {
 
-    private String weight;
+    private String maxKilometers;
 
-    public Car(String weight) {
-        this.weight = weight;
+    public String getMaxKilometers() {
+        return maxKilometers;
     }
 
-    public String getWeight() {
-        return weight;
+    public void setMaxKilometers(String maxKilometers) {
+        this.maxKilometers = maxKilometers;
     }
 
-    public void setWeight(String weight) {
-        this.weight = weight;
+    public Car() {
+    }
+
+    public Car(String maxKilometers) {
+        this.maxKilometers = maxKilometers;
+    }
+
+    public Car(String name, String cost, String maxKilometers) {
+        this.setName(name);
+        this.setCost(cost);
+        this.maxKilometers = maxKilometers;
     }
 
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Car{");
-        sb.append("weight='").append(weight).append('\'');
+        sb.append(("Name='")).append(getName()).append('\'');
+        sb.append("maxKilometers='").append(maxKilometers).append('\'');
         sb.append('}');
         return sb.toString();
     }
